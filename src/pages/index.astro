@@ -3,7 +3,7 @@ import Layout from '../layouts/Layout.astro';
 import H1 from '../components/H1.astro';
 import Main from "../components/Main.astro";
 import img2 from "../assets/img2.png";
-import motor from "../assets/motor.jpg";
+import ITContact from "../assets/ITContact.png";
 import webkmti from "../assets/webkmti.png"
 import studymore from "../assets/studymore.png"
 import { Image } from 'astro:assets';
@@ -11,14 +11,18 @@ import { Image } from 'astro:assets';
 
 <Layout title="IPTEK | IT Research">
     <Main>
-        <H1 text='Preview'/>
+        <H1 text='Welcome'/>
       <div class="flex" style="border-radius: 50px; color: black;">
         <Image class="round-photo" src={img2} alt="foto ganteng"/>
       </div>
-      <h2 class="text-sky-400 text-center" style="color: black; font-size: 30px;">Selamat Datang</h2>
-      <div class="card">
-        <h3>IT RESEARCH</h3>
-        <p>Merupakan salah satu proker dari divisi IPTEK berfokus membahas berbagai macam berita terkait teknologi lokal maupun dunia, yang sedang ramai di perbincangkan di dunia teknologi.</p>
+      <h2 class="text-sky-400 text-center mt-10 animate-heading" style="color: black; font-size: 30px;">PJ: Atama Cahya El-Firdausy</h2>
+      <div class="mb-10 card">
+        <h3 style="        font-family: 'Poppins', sans-serif;
+				font-weight: 300;
+				font-style: normal;">IT RESEARCH</h3>
+        <p style="        font-family: 'Poppins', sans-serif;
+				font-weight: 300;
+				font-style: normal;">Merupakan salah satu proker dari divisi IPTEK berfokus membahas berbagai macam berita terkait teknologi lokal maupun dunia, yang sedang ramai di perbincangkan di dunia teknologi.</p>
       </div>
       <div class="photo-cards">
         <div class="photo-card">
@@ -28,8 +32,8 @@ import { Image } from 'astro:assets';
             </a>
         </div>
         <div class="photo-card">
-            <a href="https://kmti.vercel.app/#" class=""> 
-          <Image src={motor} alt="Foto 2"/>
+            <a href="https://itresearchkmti.blogspot.com/" class=""> 
+          <Image src={ITContact} alt="Foto 2"/>
           <p>Contact ITResearch</p>
             </a>
         </div>
@@ -44,6 +48,8 @@ import { Image } from 'astro:assets';
     </main>
     
     <style>
+
+      @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');	
       .round-photo {
         display: block;
         max-width: 100%;
@@ -70,8 +76,7 @@ import { Image } from 'astro:assets';
         border-radius: 10px;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         padding: 20px;
-        margin: 20px auto;
-        max-width: 1000px;
+        max-width: 1200px;
         text-align: center;
       }
   
@@ -122,5 +127,25 @@ import { Image } from 'astro:assets';
         transform: scale(1.05);
         box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
       }
+
+        .animate-heading {
+      color: black;
+      font-size: 30px;
+      position: relative;
+      animation: textGlow 3s ease-in-out infinite, textSlideIn 1s ease-out forwards;
+      }
+
+      @keyframes textSlideIn {
+          0% {
+              opacity: 0;
+              transform: translateX(-100%);
+          }
+          100% {
+              opacity: 1;
+              transform: translateX(0);
+          }
+      }
+
+
     </style>
 </Layout>

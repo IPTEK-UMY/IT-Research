@@ -6,6 +6,7 @@ Project blog untuk next level kmti versi 2.
 [IT Research](https://it-research.vercel.app/)
 
 > Tahap selanjutnya biar Tama yang lanjut.
+> Design Layout HomePage.
 
 ## 🧞 Commands
 

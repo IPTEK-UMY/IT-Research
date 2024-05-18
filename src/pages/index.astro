@@ -2,10 +2,13 @@
 import Layout from '../layouts/Layout.astro';
 import H1 from '../components/H1.astro';
 import Main from "../components/Main.astro";
+import breeze from "../assets/breeze.png";
+import { Image } from 'astro:assets';
 ---
 
 <Layout title="IPTEK | IT Research">
 	<Main>
-		<H1 text='Preview'/>
+		<!-- <H1 text='Preview'/> -->
+		<Image src={breeze} alt="breeze" />
 	</Main>
 </Layout>
